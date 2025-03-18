@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Font Size Comparison</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<div class="controls">
+		<label for="textInput">Text to compare:</label>
+		<input type="text" id="textInput" value="Hello World 100">
+		<button id="updateText">Update</button>
+	</div>
+
+	<h3>Width comparison:</h3>
+	<div class="container vertical">
+		<div id="sourceSansText" class="text source-sans">Hello World 100</div>
+		<div id="interText" class="text inter-variable">Hello World 100</div>
+	</div>
+	
+	<h3>Height comparison:</h3>
+	<div class="container horizontal">
+		<div id="sourceSansTextSide" class="text source-sans">Hello World 100</div>
+		<div id="interTextSide" class="text inter-variable">Hello World 100</div>
+	</div>
+
+	<div class="metrics">
+		<div id="metrics"></div>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html> 

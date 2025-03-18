@@ -1,0 +1,222 @@
+/* Import the fonts */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
+
+body {
+	font-family: sans-serif;
+	margin: 0;
+	padding: 20px;
+}
+
+.controls {
+	margin-bottom: 20px;
+}
+
+.controls input {
+	padding: 5px;
+	margin-right: 10px;
+}
+
+.controls button {
+	padding: 5px 10px;
+}
+
+h3 {
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.container {
+	margin-bottom: 20px;
+}
+
+.vertical {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 20px;
+}
+
+.horizontal {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 20px;
+}
+
+.text {
+	display: inline-block;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	max-width: fit-content;
+}
+
+.source-sans {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 24px;
+}
+
+.inter-variable {
+	font-family: 'Inter', sans-serif;
+	font-size: 24px; /* Initial size, will be adjusted by JS */
+}
+
+.metrics {
+	font-family: monospace;
+	background-color: #f5f5f5;
+	padding: 10px;
+	border-radius: 4px;
+	margin-top: 20px;
+}
+
+/* Results table styles */
+.results-table {
+	width: 100%;
+	border-collapse: collapse;
+	margin: 20px 0;
+}
+
+.results-table th, 
+.results-table td {
+	border: 1px solid #ddd;
+	padding: 8px;
+	text-align: center;
+}
+
+.results-table th {
+	background-color: #f2f2f2;
+	font-weight: bold;
+}
+
+.results-table tr:nth-child(even) {
+	background-color: #f9f9f9;
+}
+
+/* Chart styles */
+.chart {
+	margin: 20px 0;
+}
+
+.chart-row {
+	display: flex;
+	align-items: center;
+	margin-bottom: 5px;
+}
+
+.chart-label {
+	width: 60px;
+	text-align: right;
+	padding-right: 10px;
+}
+
+.chart-source {
+	background-color: #90caf9;
+	padding: 3px 6px;
+	margin-right: 5px;
+	text-align: center;
+	border-radius: 3px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	min-width: 30px;
+}
+
+.chart-adjusted {
+	background-color: #a5d6a7;
+	padding: 3px 6px;
+	text-align: center;
+	border-radius: 3px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	min-width: 30px;
+}
+
+.summary, .chart-container {
+	margin: 30px 0;
+	padding: 15px;
+	background-color: #f9f9f9;
+	border-radius: 8px;
+	border: 1px solid #ddd;
+}
+
+.summary h3, .chart-container h3 {
+	margin-top: 0;
+}
+
+hr {
+	border: 0;
+	height: 1px;
+	background-color: #ddd;
+	margin: 20px 0;
+}
+
+h4 {
+	margin-top: 25px;
+	margin-bottom: 5px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #eee;
+}
+
+/* Limit chart size for very large font sizes */
+.chart-source, .chart-adjusted {
+	max-width: 500px;
+}
+
+.all-comparisons {
+	margin-top: 30px;
+}
+
+.font-comparison {
+	margin-bottom: 40px;
+	padding: 20px;
+	border: 1px solid #eee;
+	border-radius: 8px;
+	background-color: #fafafa;
+}
+
+.comparison-result {
+	margin-top: 15px;
+	padding: 10px;
+	background-color: #f0f0f0;
+	border-radius: 4px;
+}
+
+.comparison-result p {
+	margin: 5px 0;
+}
+
+/* Make the font size compare more compact */
+.font-comparison .container {
+	margin-bottom: 10px;
+}
+
+.font-comparison p {
+	margin: 10px 0 5px 0;
+	font-weight: bold;
+}
+
+/* Add a back-to-top button for long pages */
+.back-to-top {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	background-color: #333;
+	color: white;
+	border: none;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	font-size: 24px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.back-to-top:hover {
+	background-color: #555;
+} 
